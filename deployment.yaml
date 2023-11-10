@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: peliculas-api
-        image: gcr.io/lateral-journey-403311/peliculas-api:v1
+        image: gcr.io/helpful-pixel-377204/apipeliculas:latest
         ports:
         - containerPort: 5000
         env:
@@ -23,11 +23,11 @@ spec:
         - name: DB_PORT
           value: "5432"
         - name: DB_USER
-          value: root
+          value: stip
         - name: DB_PASS
-          value: root
+          value: holaquemas
         - name: DB_NAME
-          value: peliculasdb
+          value: test1
         - name: SQLALCHEMY_DATABASE_URI
           value: "postgresql://$(DB_USER):$(DB_PASS)@postgres-service:$(DB_PORT)/$(DB_NAME)"
         - name: DATABASE_URL

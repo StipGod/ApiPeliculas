@@ -17,10 +17,10 @@ spec:
         image: postgres:latest
         env:
         - name: POSTGRES_DB
-          value: peliculasdb
+          value: test1
         - name: POSTGRES_USER
-          value: root
+          value: stip
         - name: POSTGRES_PASSWORD
-          value: root
+          value: holaquemas
         ports:
         - containerPort: 5432
